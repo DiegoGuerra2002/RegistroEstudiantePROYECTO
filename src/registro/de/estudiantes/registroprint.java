@@ -3,15 +3,15 @@ package registro.de.estudiantes;
 
 
 public class registroprint {
-    private  registro ob;
+    private  registro oz;
 
     public registroprint(registro ob){
-         this.ob = ob;
+         this.oz = ob;
     }
 
     public void imprimirObjeto()
     {
-      System.out.println(this.ob.imprimir());
+      System.out.println(this.oz.imprimir());
     }
 }
 
