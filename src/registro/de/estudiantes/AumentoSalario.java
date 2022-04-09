@@ -3,6 +3,9 @@ package registro.de.estudiantes;
 //Se habilita la herencia en la clase con la clave [extends]
 
 public class AumentoSalario extends Docentes {
+//La accion codigoDocente, asistencia, notaDocente se a creado sin relacion alguna a la clase padre, unas variables nuevas.
+//polimorfismo
+    
     private int codigoDocente;
     private float asistencia;
     private int notaDocente;
