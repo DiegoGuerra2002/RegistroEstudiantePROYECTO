@@ -4,6 +4,8 @@ package registro.de.estudiantes;
         
         
 public class Beca extends Estudiante{
+//La accion codigoEstudiante y notaFinal, se a creado sin relacion alguna a la clase padre, unas variables nuevas.
+//polimorfismo
     private int codigoEstudiante;
     private float notaFinal;
 
@@ -20,8 +22,7 @@ public class Beca extends Estudiante{
                 "\nde apellido: "+getApellido()+
                 "\ncursante de: "+getAño() +
                 "\ncon edad de: "+getEdad() +
-                "\ncon el Codigo de Estudiante: "+codigoEstudiante+
-                "\ncon una nota definitiva de: "+notaFinal);
+                "\ncon el Codigo de Estudiante: "+codigoEstudiante);
         
         System.out.println("Es ganador de la beca estudiantil por sus esfuerzos.");
     }
