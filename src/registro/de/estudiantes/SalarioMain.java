@@ -1,7 +1,7 @@
 package registro.de.estudiantes;
 //Autor: Diego Fernando Guevara Guerra
 //       Guillermo Alejandro Mezquita Lopez
-
+        
 public class SalarioMain {
         public static void main(String[] args) {
         
