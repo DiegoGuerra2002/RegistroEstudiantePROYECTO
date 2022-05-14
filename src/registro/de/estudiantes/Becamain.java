@@ -12,22 +12,18 @@ public class Becamain {
         Beca estudiante = new Beca("Walter","Vanegas",3,20,26,10);
         
         estudiante.mostrarDATOS();
-        //Se crea un arreglo en el que se guarden variables polimorficas ( Lista )
+        //Se crea un arreglo en el que se guarden variables polimorficas (Variable polimorfica: Notas )
         List<Notas> lista = new ArrayList<>();
         
         Scanner reader = new Scanner(System.in);
         System.out.println("La nota del estudiante: ");
         double nota = reader.nextDouble();
-        //Intanciar=Llamar un metodo de otra clase a la clase main.
+        //Intancia = objeto/instancia de una clase.
         lista.add(new Vnota(nota));
         
         System.out.println("Registro de notas");
         for(Notas salida:lista) {
             salida.notaver();
-        }
-        
-        System.out.println("------------");
-        ((Vnota)lista).Casting();
-    }
-    
+        }     
+    }       
 }

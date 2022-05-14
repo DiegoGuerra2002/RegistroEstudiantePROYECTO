@@ -3,6 +3,7 @@
 //FECHA: 13 DE FEBRERO DEL 2022
 package registro.de.estudiantes;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 //Se implementa un metodo de ordenamiento en esta clase para organizar una lista de estudiantes sin importar el orden
@@ -10,15 +11,27 @@ import javax.swing.JOptionPane;
 public class N_Lista {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-       int arreglo[], nElementos, aux;
-
+        boolean conti;
+        int arreglo[], nElementos, aux;
+        
        nElementos = Integer.parseInt(JOptionPane.showInputDialog("Digite la cantidad de alumnos de la lista: "));
 
        arreglo = new int[nElementos]; //Asignamos el numero de elementos del arreglo
+       
+//SE IMPLEMENTA EL TRY CATCH!!
 
        for(int i=0;i<nElementos;i++){
+         do { 
+           try { 
+               conti = false;
          System.out.println((i+1)+" Introduzca el numero de lista del estudiante: ");
          arreglo[i] = entrada.nextInt();
+           } catch(InputMismatchException ex){
+               System.out.println("Ingrese un elemento numerico por favor.");
+                entrada.next();
+                conti = true;
+           }
+         } while (conti);
        }
 
        //Metodo Burbuja

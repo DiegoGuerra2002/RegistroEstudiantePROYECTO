@@ -4,8 +4,6 @@ package registro.de.estudiantes;
         
         
 public class Beca extends Estudiante{
-//La accion codigoEstudiante y notaFinal, se a creado sin relacion alguna a la clase padre, unas variables nuevas.
-//polimorfismo
     private int codigoEstudiante;
     private float notaFinal;
 
