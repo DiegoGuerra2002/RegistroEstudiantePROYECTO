@@ -19,19 +19,19 @@ public class N_Lista {
        arreglo = new int[nElementos]; //Asignamos el numero de elementos del arreglo
        
 //SE IMPLEMENTA EL TRY CATCH!!
-
        for(int i=0;i<nElementos;i++){
-         do { 
-           try { 
-               conti = false;
-         System.out.println((i+1)+" Introduzca el numero de lista del estudiante: ");
-         arreglo[i] = entrada.nextInt();
-           } catch(InputMismatchException ex){
-               System.out.println("Ingrese un elemento numerico por favor.");
-                entrada.next();
-                conti = true;
-           }
-         } while (conti);
+           do {
+               try{
+                   conti = false;
+                    System.out.println((i+1)+" Introduzca el numero de lista del estudiante: ");
+                    arreglo[i] = entrada.nextInt();
+               } catch(InputMismatchException ex){
+                   System.out.println("Ingrese un elemento numero por favor.");
+                   entrada.next();
+                   conti = true;
+               }
+           } while(conti);
+
        }
 
        //Metodo Burbuja
@@ -52,10 +52,13 @@ public class N_Lista {
          System.out.print("");
 
        }
-//Metodo de busqueda binaria       
+//Metodo de busqueda binaria
+//Se aplica metodo Try Catch 
+       do{
+       try {
+           conti=false;
        System.out.print("\nIngrese el numero que desea buscar: ");
        int numBuscar=entrada.nextInt();
-
        int n=arreglo.length, inf=0,centro=0;
        int sup=n-1;
        boolean bandera=false;
@@ -80,5 +83,11 @@ public class N_Lista {
          System.out.println("");
          System.out.println("El numero de la busqueda no se ha encontrado");
        }
+       } catch(InputMismatchException ex){
+               System.out.println("Ingrese un elemento numerico por favor.");
+                entrada.next();
+                conti=true;
+           }
+       } while(conti);
 }
 }
