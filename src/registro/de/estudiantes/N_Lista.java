@@ -1,6 +1,6 @@
 //AUTOR: DIEGO FERNANDO GUEVARA GUERRA
 //AUTOR: GUILLERMO ALEJANDRO MEZQUITA LOPEZ
-//FECHA: 13 DE FEBRERO DEL 2022
+//FECHA: 14/MARZO/2022
 package registro.de.estudiantes;
 
 import java.util.InputMismatchException;
@@ -26,7 +26,7 @@ public class N_Lista {
                     System.out.println((i+1)+" Introduzca el numero de lista del estudiante: ");
                     arreglo[i] = entrada.nextInt();
                } catch(InputMismatchException ex){
-                   System.out.println("Ingrese un elemento numero por favor.");
+                   System.out.println("Ingrese un elemento numerico por favor.");
                    entrada.next();
                    conti = true;
                }

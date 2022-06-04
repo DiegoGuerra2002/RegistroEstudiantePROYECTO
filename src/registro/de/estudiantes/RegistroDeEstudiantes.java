@@ -10,15 +10,17 @@ public class RegistroDeEstudiantes {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         int estudiante;
-            try{
-                System.out.print("introduzca el codigo del estudiante: ");
-                estudiante = teclado.nextInt();
-                int codigo = estudiante;
-                System.out.println("El codigo del estudiante a sido registrado como el numero: " + codigo);
-            } catch (InputMismatchException ex) {
-                System.out.println("Ingrese un elemento numerico por favor.");
-                teclado.next();
-            }
+//        
+//            try{
+//                System.out.print("introduzca el codigo del estudiante: ");
+//                estudiante = teclado.nextInt();
+//                int codigo = estudiante;
+//                System.out.println("El codigo del estudiante a sido registrado como el numero: " + codigo);
+//            } catch (InputMismatchException ex) {
+//                System.out.println("Ingrese un elemento numerico por favor.");
+//                teclado.next();
+//            }
+//            
 //        System.out.println("-------------------------------");
 //        System.out.println("Registro de alumno");
 //        System.out.println("");
@@ -33,15 +35,19 @@ public class RegistroDeEstudiantes {
 //          registro dnt = new Docentes();
 //          alm.imprimir();         // imprime cliente
 //          dnt.imprimir();       // imprime admin
-//        System.out.println("-------------------------------");
-//        System.out.println("Registro de Docente");
-//        System.out.println("");
-//        Docentes s = new Docentes();
-//        
-//        s.setSección("A");
-//        System.out.println("La sección del docente es: " + s.getSección());
-//        System.out.println("");
-//        System.out.println("-------------------------------");
-//        
+        System.out.println("-------------------------------");
+        System.out.println("Registro de Docente");
+        System.out.println("");
+        Docentes s = new Docentes();
+        
+        s.setSección("A");
+        System.out.println("La sección del docente es: " + s.getSección());
+        System.out.println("");
+        System.out.println("-------------------------------");
+        
+    }
+
+    public RegistroDeEstudiantes(int i, String nattu, int i0) {
+        
     }
 }
